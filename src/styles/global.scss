@@ -1,0 +1,47 @@
+@import "variables";
+@import "dex";
+@import "dashboard";
+
+body {
+  overscroll-behavior: none;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  color: $text-color;
+  font-family: $font-stack;
+}
+
+/* hide phone arrows */
+/* Works for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+.ps-sidebar-container::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.flexCenterVertical {
+  display: flex;
+  align-items: center;
+  padding-top: 1;
+  padding-bottom: 1;
+}
